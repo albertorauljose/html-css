@@ -1,0 +1,249 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: Android;
+    src: url('../fontes/idroid.otf') format('opentype');
+}
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* CORPO */
+body {
+    background-color: #bdcc6552;
+}
+
+
+/* CABEÇALHO PRINCIPAL */
+body > header {
+    background-image: linear-gradient(to bottom, #37C374, #1A5C38);
+    color: #fff;
+    text-align: center;
+}
+
+body > header {
+    padding: 10px 0;
+}
+
+body > header > div {
+    padding: 20px;
+}
+
+body > header h1 {
+    text-transform: uppercase;
+}
+
+body > header p {
+    color: #eee;
+    text-align: center;
+    margin: 30px auto;
+    max-width: 531px;
+    font-weight: bold;
+}
+
+body > header nav {
+    text-align: left;
+}
+body > header nav ul {
+    list-style-type: none;
+}
+
+body > header nav li {
+    display: inline;
+    margin-left: 2px;
+}
+
+body > header nav a {
+    color: #ccc;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.5s ease-in;
+}
+
+body > header nav a:hover {
+    background-color: #04c236;
+    color: #555;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    max-width: 800px;
+    background-color: #fff;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px #00000069;
+    border-radius: 0 0 8px 8px;
+}
+
+main > section h1 {
+    font-family: Android;
+    color: #1A5C38;
+    margin-bottom: 10px;
+}
+
+main > section h2{
+    font-family: Android;
+    font-size: 1em;
+    margin: 10px 0;
+    padding-left: 6px;
+    background-image: linear-gradient(to right, #84E1AD, #fff);
+    color: #1A5C38;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2em;
+    font-size: 0.8em;
+}
+
+main strong {
+    color: #1A5C38;
+    font-weight: 800;
+}
+
+main a {
+    background: url('../imagens/swivel.png') no-repeat 91% center;
+    padding: 0 30px 0 6px;
+    color: #1A5C38;
+    font-weight: 800;
+}
+
+main > section a {
+    background-color: #84E1AD; 
+}
+
+main picture {
+    display: block;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+
+}
+
+.bugdroid {
+    max-width: 300px;
+}
+
+.android-video {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    background-color: #1A5C38;
+    color: #fff;
+    margin: 15px 0;
+}
+
+.android-video p {
+    text-indent: 0;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    padding: 24% 0;
+}
+
+main > aside {
+    background-color: #C5EBD6;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+main > aside h2 {
+    color: #fff;
+    font-size: 1em;
+    background-color: #1A5C38;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+main > aside article{
+    padding: 10px;
+}
+
+main > aside p {
+    clear: both;
+}
+
+main > aside ul{
+    float: left;
+    width: 40%;
+    padding: 12px 0;
+    margin-left: 16px;
+    list-style-image: url('../imagens/checkmark.png');
+}
+
+main > aside ul + ul{
+    float: right;
+    margin-left: 0;
+}
+
+main > aside ul li {
+    font-size: 0.8em;
+}
+
+
+/* RODAPÉ PRINCIPAL */
+body > footer {
+    background-color: #1A5C38;
+    text-align: center;
+    padding: 4px 0;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+body > footer a {
+    font-weight: 800;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #888;
+}
+
+@media(max-width: 575px) {
+    body > header h1 {
+        font-size: 1.5em;
+    }
+    
+    body > header p {
+        font-size: 0.8em;
+        margin: 10px 0;
+    }
+
+    body > header nav li {
+        text-align: center;
+        margin: 0;
+    }
+
+    body > header nav a{
+        padding: 15px 0;
+        font-size: 0.8em;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .dan-droids img {
+        max-width: 434px;
+    }
+
+    .irina-blok img {
+        max-width: 400px;
+    }
+}
